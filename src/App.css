@@ -1,0 +1,31 @@
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { ThemeProvider } from './context/ThemeContext';
+import Layout from './components/layout/Layout';
+import Home from './pages/Home';
+import ServiciosPage from './pages/ServiciosPage';
+import PortafolioPage from './pages/PortafolioPage';
+import ContactoPage from './pages/ContactoPage';
+import TiendaPage from './pages/TiendaPage';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './styles/theme.css';
+
+function App() {
+  return (
+    <ThemeProvider>
+      <BrowserRouter>
+        <Layout>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/servicios" element={<ServiciosPage />} />
+            <Route path="/portafolio" element={<PortafolioPage />} />
+            <Route path="/contacto" element={<ContactoPage />} />
+            <Route path="/tienda" element={<TiendaPage />} />
+          </Routes>
+        </Layout>
+      </BrowserRouter>
+    </ThemeProvider>
+  );
+}
+
+export default App;

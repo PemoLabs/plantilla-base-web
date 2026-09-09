@@ -1,0 +1,13 @@
+:root {
+  /* TEMA CORPORATIVO (por defecto) */
+  --color-primary: #1A365D;
+  --color-secondary: #2B6CB0;
+  --color-accent: #F59E0B;
+  --color-light: #F8F9FA;
+  --color-dark: #212529;
+  --color-white: #FFFFFF;
+  --font-primary: 'Roboto', sans-serif;
+  --font-heading: 'Montserrat', sans-serif;
+}
+
+/* Los otros temas se aplican dinámicamente con JavaScript */
